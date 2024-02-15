@@ -1,0 +1,13 @@
+** necho
+A POSIX 1003.1-2008 "based" echo for Unix-like systems.
+
+*** Why?
+In most shells, =echo= is a built-in command, means that, you
+don't invoke the actual echo program, but rather a "feature
+function" provided by the shell.
+
+The reason of necho's existence, is that, generic =echo= programs
+whether provided in the GNU/Linux or BSD system (especially BSD)
+doesn't handle backslash characters. However, they do have a special
+argument and that's "-n". This version of echo combines both
+POSIX 1003.1-2008 and the generic echo.
